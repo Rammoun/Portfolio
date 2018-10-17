@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Courgette|Acme|Bangers|Kalam|Marmelad" rel="stylesheet"> 
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="images/Words.mp4" type="video/mp4">
+  <source src="images/Words.ogv" type="video/ogv">
+  <source src="images/Words.webm" type="video/webm">
+</video>
+<header>
+	<nav class="navbar navbar-light navbar-expand-lg border border-primary fixed-top d-flex justify-content-between">
+		<div class="navbar-brand col">
+			<img class="rounded-circle my-photo" alt="My Photo" src="images/IMG_20180423_203832.jpg">
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu">
+  			<span class="navbar-toggler-icon text-danger"></span>
+  		</button>
+  		<div class=" col text-center">
+  			<a href="#"><h2>Hassani Rami</h2></a>
+			<h4 class="text-info">A junior web developer</h4>  			
+  		</div>
+  		<div class="menu collapse navbar-collapse d-lg-flex justify-content-end  col-1" id="menu">
+  			<h5><ul class="nav">
+  				<li><a class="text-danger nav-item nav-link" href="#about">About</a></li>
+				<li><a class="text-danger nav-item nav-link" href="#myWork">My work</a></li>
+				<li><a class="text-danger nav-item nav-link" href="#contact">Contact Me</a></li>
+  			</ul></h5>
+  		</div>
+	</nav>
+</header>
+<main class="container-fluid border border-dark p-1 rounded">
+	<section id="about">
+		<h1 class="text-center text-warning">About Me</h1>		
+		<nav>
+ 			<div class="nav nav-tabs about-me-menu d-flex justify-content-center" id="nav-tab" role="tablist">
+    			<a class="nav-item nav-link active text-info bg-light ml-1 border border-warning" id="nav-home-tab" data-toggle="tab" href="#nav-personal" role="tab"><span class="fa fa-user-friends mr-3"></span>Personal Info</a>
+    			<a class="nav-item nav-link text-info bg-light ml-1 border border-warning" id="nav-profile-tab" data-toggle="tab" href="#nav-professional" role="tab" ><span class="fas fa-hammer mr-3"></span>Professional Info</a>
+    			<a class="nav-item nav-link text-info bg-light mx-1 border border-warning" id="nav-contact-tab" data-toggle="tab" href="#nav-educational" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="fa fa-school  mr-3"></span>Educational highlights</a>
+  			</div>
+		</nav>
+		<div class="tab-content text-dark" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-personal" role="tabpanel" aria-labelledby="nav-personal">
+				<span>Hello<br></span>
+				<p class="ml-2">I am <span class="my-name"><strong>H</strong>assani <strong>R</strong>ami</span>, a 30 years old junior web developer from Tunisia. <br>I like <span class="my-likes">sciences, astronomy, chemistry, fast cars, high-tech and scary movies</span><br>I am single (for now :p ) and searching for a career in web development.</p>
+			</div>
+			<div class="tab-pane fade" id="nav-professional" role="tabpanel" aria-labelledby="nav-professional">
+				<p class="my-work">Since my graduation in 2011 I had worked in different places, but none of them brought me closer to my dreams' career:</p>
+				<ul class="works">
+					<li><i class="fa fa-hamsa mr-2 text-success"></i>Technical support call center agent</li>
+					<li><i class="fa fa-hamsa mr-2 text-success"></i>Foreman and quality control agent in a plastics factory</li>
+					<li><i class="fa fa-hamsa mr-2 text-success"></i>Infografist</li>
+					<li><i class="fa fa-hamsa mr-2 text-success"></i>IT technician in a small IT repairs agency</li>
+					<li><i class="fa fa-hamsa mr-2 text-success"></i>...</li>
+				</ul>
+			</div>
+			<div class="tab-pane fade text-dark" id="nav-educational" role="tabpanel" aria-labelledby="nav-educational">
+				<ul class="education">
+					<li><i class="fa fa-graduation-cap mr-2 text-danger"></i>A french baccaloreat scientific branch</li>
+					<li><i class="fa fa-graduation-cap mr-2 text-danger"></i>A diploma in IT networking technologies</li>
+					<li><i class="fa fa-graduation-cap mr-2 text-danger"></i>Traineeships in:
+						<ul class="trainings">
+							<li><i class="fa fa-book mr-2 text-success"></i>Javascript / jQuery</li>
+							<li><i class="fa fa-book mr-2 text-success"></i>HTML5 / CSS3</li>
+							<li><i class="fa fa-book mr-2 text-success"></i>PHP / MySQL</li>
+							<li><i class="fa fa-book mr-2 text-success"></i>Adobe Photoshop</li>						
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</section>
+	<section class="" id="myWork">
+		<h1 class="text-center text-success">My Work</h1>
+		<div class="work-gallery d-flex flex-wrap justify-content-around flex-column flex-md-row">
+			<img class="img-fluid" alt="chahd" src="images/Chahd.jpg"/>
+			<img class="img-fluid" alt="plan-marina" src="images/PlanPrskFini.png">
+			<img alt="valentine-marina" src="images/MarinaStVal.JPG" class="long img-fluid">
+			<img alt="utaim-monastir" src="images/Utaim.JPG" class="long img-fluid">
+			<img alt="app-salle-de-sport" src="images/AppFormePlus.JPG" class="formeplus img-fluid">
+		</div>
+	</section>
+		
+	<section class="" id="contact">		
+		<h1 class="text-center text-info">Contact Me</h1>
+		<div class="d-flex justify-content-around">
+			<div class="contact-address col-4 text-center">
+				<h3 class="text-light"><i class="fa fa-mobile-alt"></i><span class="ml-2">Phone number:</span></h3>
+				<h5 class="text-info">Omar el Mokhtar street z-kontesh jemmel 5028</h5>
+			</div>
+			<div class="contact-email col-4 text-center">
+				<h3 class="text-light"><i class="fas fa-at"></i><span class="ml-2">Email address:</span></h3>
+				<a href="mailto:hassanirami@gmail.com"><h5 class="text-info">hassanirami@gmail.com</h5></a>
+			</div>
+			<div class="contact-address col-4 text-center">
+				<h3 class="text-light"><i class="far fa-address-card"></i><span class="ml-2">Home address:</span></h3>
+				<h5 class="text-info">Omar el Mokhtar street z-kontesh jemmel 5028</h5>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<h5 class="text-center text-white-50 bg-danger p-3"><i class="fa fa-copyright"></i> Copyright <span class="copyright-email"><a class=" text-white-50" href="mailto:hassanirami@gmail.com">hassanirami@gmail.com</a></span> 2018</h5>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

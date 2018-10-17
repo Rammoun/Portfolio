@@ -1,0 +1,29 @@
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+	z-index: -10;
+}
+body{font-family: "Marmelad" !important;}
+.navbar{background-color: rgba(255,255,255,1);}
+.my-photo{max-height: 130px;}
+#menu{max-width: 40%;}
+main{margin-top: 180px;}
+#about{background-color: rgba(255,255,0,0.6); padding-bottom: 1%; margin-bottom: 2%;}
+#about h1{text-shadow: 2px 2px 4px #ff0000; margin-bottom: 1%;}
+#nav-personal{font-family: "Kalam" !important; font-size: 25px; padding-left: 3%; padding-top: 1%;}
+.my-name{color:rgba(6,146,135,1.00) ;}
+#nav-professional{font-family: "Acme" !important; font-size: 25px; padding-left: 3%; padding-top: 1%;}
+#nav-educational{font-family: "Courgette" !important; font-size: 25px; padding-left: 3%; padding-top: 1%;}
+.trainings, .education, .works{list-style: none;}
+#myWork{background-color: rgba(10,200,0,0.6); margin-bottom: 2%;}
+#myWork h1{text-shadow: 4px 4px 6px black; margin-bottom: 1%;}
+.work-gallery img{flex-basis: 48%; margin-bottom: 2%;}
+.long{flex-basis: 75% !important;}
+.formeplus{flex-basis: 75% !important;}
+#contact{background-color: rgba(0,0,220,0.6); margin-bottom: 2%;}
+#contact h1 {text-shadow: 2px 2px 4px rgba(157,9,120,1.00); margin-bottom: 1%;}
+h5.text-info{text-shadow: 2px 3px 4px rgba(0,0,0,1.00);}
+h1{font-family: "Bangers" !important;}
