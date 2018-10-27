@@ -1,3 +1,9 @@
+@keyframes rotate{
+	0% {-webkit-transform: rotateY(0);transform: rotateY(0);}
+	50% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+	100% {-webkit-transform: rotateY(0);transform: rotateY(0);}
+}
+@keyframes fade{from {opacity: 0;} to {opacity: 1;}}
 #myVideo {
     position: fixed;
     top: 0;
@@ -10,20 +16,70 @@ body{font-family: "Marmelad" !important;}
 .navbar{background-color: rgba(255,255,255,1);}
 .my-photo{max-height: 130px;}
 #menu{max-width: 40%;}
-main{margin-top: 180px;}
-#about{background-color: rgba(255,255,0,0.6); padding-bottom: 1%; margin-bottom: 2%;}
+main{margin-top: 180px; background-color: rgba(255,255,255,0.60)}
+#about{ padding-bottom: 1%; margin-bottom: 2%;}
 #about h1{text-shadow: 2px 2px 4px #ff0000; margin-bottom: 1%;}
 #nav-personal{font-family: "Kalam" !important; font-size: 25px; padding-left: 3%; padding-top: 1%;}
 .my-name{color:rgba(6,146,135,1.00) ;}
 #nav-professional{font-family: "Acme" !important; font-size: 25px; padding-left: 3%; padding-top: 1%;}
 #nav-educational{font-family: "Courgette" !important; font-size: 25px; padding-left: 3%; padding-top: 1%;}
 .trainings, .education, .works{list-style: none;}
-#myWork{background-color: rgba(10,200,0,0.6); margin-bottom: 2%;}
+#myWork{margin-bottom: 2%;}
 #myWork h1{text-shadow: 4px 4px 6px black; margin-bottom: 1%;}
-.work-gallery img{flex-basis: 48%; margin-bottom: 2%;}
-.long{flex-basis: 75% !important;}
-.formeplus{flex-basis: 75% !important;}
-#contact{background-color: rgba(0,0,220,0.6); margin-bottom: 2%;}
+.gallery-img{margin-bottom: 2%; flex-basis: 48%; margin: 0 1%;}
+.gallery-img:hover{	animation: rotate 1.5s linear 1; }
+.long{flex-basis: 75% !important; }
+.chahd{position: relative;}
+.chahd:after{
+	position: absolute;
+	top: 0; left: 0; opacity: 0;	
+	content: "Chahd magazine is a children magazine I wrote and designed from sketched ideas of a teacher. I mainly used Adobe Photoshop to do it." ; 
+	background-color: rgba(35,191,247,0.71); 
+	color: red; 
+	height: 100%; width: 100%; padding: 2%; font-size: 110%; font-weight: bold;
+}
+.chahd:hover:after{ opacity: 1; transition-delay: 1s; transition-duration: .5s;}
+.plan{position: relative;}
+.plan:after{
+	position: absolute;
+	top: 0; left: 0; opacity: 0;	
+	content: "This is the access plan to the marina of Monastir. I created it by painitng over a Google Earth map using Adobe Photoshop and by being present on the port for a more precise map." ; 
+	background-color: rgba(97,241,167,0.71); 
+	color: red; 
+	height: 100%; width: 100%; padding: 2%; font-size: 110%; font-weight: bold;
+}
+.plan:hover:after{opacity: 1;transition-delay: 1s; transition-duration: .5s;}
+.val{position: relative;}
+.val:after{
+	position: absolute;
+	top: 0; left: 0; opacity: 0;	
+	content: "This is a web application for a promotion in the appart-hotels of the marina of Monastir in occasion of Valentine's day. It was developed using PHP for server side programming, Javascript for client side programming, Bootsttrap for layout and design and a MySQL database to save the reservation's data. This was my first challenge in \"professional\" web developing." ; 
+	background-color: rgba(220,237,96,0.71); 
+	color: red; 
+	height: 100%; width: 100%; padding: 2%; font-size: 110%; font-weight: bold;
+}
+.val:hover:after{opacity: 1;transition-delay: 1s; transition-duration: .5s;}
+.utaim{position: relative; border: solid; display: flex; justify-content: center;}
+.utaim:after{
+	position: absolute;
+	top: 0; left: 0; opacity: 0;	
+	content: "UTAIM is an organisation that helps the mentally deficient kids. This is the start of the website I was doing for their school, not yet finished. Designed using Bootstrap, HTML and CSS and used Adobe Photoshop for picture's modifications" ; 
+	background-color: rgba(203,203,203,0.71);
+	color: red; 
+	height: 100%; width: 100%; padding: 2%; font-size: 110%; font-weight: bold;
+}
+.utaim:hover:after{opacity: 1;transition-delay: 1s; transition-duration: .5s;}
+.formeplus{flex-basis: 75% !important;position: relative;}
+.formeplus:after{
+	position: absolute;
+	top: 0; left: 0; opacity: 0;	
+	content: "This is my most recent professional developing project: A web application for \"Forme+\" gym. It was a perfect opportunity for me to start using the new versions of web developing techniques. Designed mainly using bootstrap 4.1 with help of css3, HTML5 and jQuery for client side developement, and using PHP object oriented techniques to communicate with a MySQL database for storing Data, it will be used in the gym as soon as they are ready. It manages all of the data of the Gym: Clients, coaches (and their detailed logs using barcodes), economic statistics: Incomes, expenses, gains for a chosen period, and charts to compare periods." ; 
+	background-color: rgba(255,255,255,0.71); 
+	color: red; 
+	height: 100%; width: 100%; padding: 2%; font-size: 110%; font-weight: bold;
+}
+.formeplus:hover:after{opacity: 1;transition-delay: 1s; transition-duration: .5s;}
+#contact{; margin-bottom: 2%;}
 #contact h1 {text-shadow: 2px 2px 4px rgba(157,9,120,1.00); margin-bottom: 1%;}
-h5.text-info{text-shadow: 2px 3px 4px rgba(0,0,0,1.00);}
+h5.text-info{/*text-shadow: 2px 3px 4px rgba(0,0,0,1.00);*/ color: darkred !important;}
 h1{font-family: "Bangers" !important;}
