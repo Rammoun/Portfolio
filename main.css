@@ -39,7 +39,8 @@ main{margin-top: 180px; background-color: rgba(255,255,255,0.60)}
 	height: 100%; width: 100%; padding: 2%; font-size: 110%; font-weight: bold;
 }
 .chahd:hover:after{ opacity: 1; transition-delay: 1s; transition-duration: .5s;}
-.plan{position: relative; height: 100%;}
+.plan img{height: 100%;}
+.plan{position: relative;}
 .plan:after{
 	position: absolute;
 	top: 0; left: 0; opacity: 0;	
