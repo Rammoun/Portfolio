@@ -23,7 +23,7 @@ h1{font-family: "Bangers" !important;}
 .about-txt{background-color: rgba(255,255,255,0.60);}
 .about-parallax {
     /* The image used */
-    background-image: url(../../5ac68fc9c407b32e008b4806-750-563.jpg);
+    background-image: url(images/aboutme.jpg);
 
     /* Set a specific height */
     height: 50%;
@@ -36,7 +36,7 @@ h1{font-family: "Bangers" !important;}
 }
 .work-parallax {
     /* The image used */
-    background-image: url(../../DayTranslationsBlog-5-Effective-Tips-to-Improve-Your-Typing-Skills.jpg);
+    background-image: url(images/work.jpg);
 
     /* Set a specific height */
     height: 40%;
