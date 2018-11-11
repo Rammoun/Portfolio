@@ -10,98 +10,215 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
-<video autoplay muted loop id="myVideo">
-  <source src="images/Words.mp4" type="video/mp4">
-  <source src="images/Words.ogv" type="video/ogv">
-  <source src="images/Words.webm" type="video/webm">
-</video>
 <header>
-	<nav class="navbar navbar-light navbar-expand-lg border border-primary fixed-top d-flex justify-content-between">
-		<div class="navbar-brand col">
-			<img class="rounded-circle my-photo" alt="My Photo" src="images/IMG_20180423_203832.jpg">
+	<nav class="navbar navbar-light bg-light navbar-expand-lg border border-primary fixed-top d-flex justify-content-around">
+		<div class="navbar-brand col-2">
+			<img class="rounded-circle my-photo col-8" alt="My Photo" src="images/IMG_20180423_203832.jpg">
 		</div>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu">
   			<span class="navbar-toggler-icon text-danger"></span>
   		</button>
-  		<div class=" col text-center">
+  		<div class="col-4 text-center">
   			<a href="#"><h2>Hassani Rami</h2></a>
-			<h4 class="text-info">A junior web developer</h4>  			
+			<h4 class="text-info">A junior developer</h4>  			
   		</div>
-  		<div class="menu collapse navbar-collapse d-lg-flex justify-content-end  col-1" id="menu">
+  		<div class="menu collapse navbar-collapse d-lg-flex justify-content-end  col-4" id="menu">
   			<h5><ul class="nav">
   				<li><a class="text-danger nav-item nav-link" href="#about">About</a></li>
-				<li><a class="text-danger nav-item nav-link" href="#myWork">My work</a></li>
+				<li><a class="text-danger nav-item nav-link" href="#work">My work</a></li>
 				<li><a class="text-danger nav-item nav-link" href="#contact">Contact Me</a></li>
   			</ul></h5>
   		</div>
 	</nav>
 </header>
 <main class="container-fluid border border-dark p-1 rounded">
-	<section id="about">
-		<h1 class="text-center text-warning">About Me</h1>		
-		<nav>
- 			<div class="nav nav-tabs about-me-menu d-flex justify-content-center" id="nav-tab" role="tablist">
-    			<a class="nav-item nav-link active text-info bg-light ml-1 border border-warning" id="nav-home-tab" data-toggle="tab" href="#nav-personal" role="tab"><span class="fa fa-user-friends mr-3"></span>Personal Info</a>
-    			<a class="nav-item nav-link text-info bg-light ml-1 border border-warning" id="nav-profile-tab" data-toggle="tab" href="#nav-professional" role="tab" ><span class="fas fa-hammer mr-3"></span>Professional Info</a>
-    			<a class="nav-item nav-link text-info bg-light mx-1 border border-warning" id="nav-contact-tab" data-toggle="tab" href="#nav-educational" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="fa fa-school  mr-3"></span>Educational highlights</a>
-  			</div>
-		</nav>
-		<div class="tab-content text-dark" id="nav-tabContent">
-			<div class="tab-pane fade show active" id="nav-personal" role="tabpanel" aria-labelledby="nav-personal">
-				<span>Hello<br></span>
-				<p class="ml-2">I am <span class="my-name"><strong>H</strong>assani <strong>R</strong>ami</span>, a 30 years old junior web developer from Tunisia. <br>I like <span class="my-likes">sciences, astronomy, chemistry, fast cars, high-tech and scary movies</span><br>I am single (for now :p ) and searching for a career in web development.</p>
-			</div>
-			<div class="tab-pane fade" id="nav-professional" role="tabpanel" aria-labelledby="nav-professional">
-				<p class="my-work">Since my graduation in 2011 I had worked in different places, but none of them brought me closer to my dreams' career:</p>
-				<ul class="works">
-					<li><i class="fa fa-hamsa mr-2 text-success"></i>Technical support call center agent</li>
-					<li><i class="fa fa-hamsa mr-2 text-success"></i>Foreman and quality control agent in a plastics factory</li>
-					<li><i class="fa fa-hamsa mr-2 text-success"></i>Infografist</li>
-					<li><i class="fa fa-hamsa mr-2 text-success"></i>IT technician in a small IT repairs agency</li>
-					<li><i class="fa fa-hamsa mr-2 text-success"></i>...</li>
+	<section class="about container-fluid about-parallax" id="about">
+		<div class="about-txt pb-2"><h1 class="text-center text-danger">About me</h1>
+			<p class="h5">
+				The name is <span class="name">Hassani Rami</span>. Born in Tunisia and actually living in it, I am a junior developer for both web and desktop. With knowledges of HTML5/CSS3 and multiple developing languages like:</p>
+				<ul type="none">
+					<li><h5><i class="fas fa-book-reader mr-2 text-info"></i>PHP/MySQL</h5></li>
+					<li><h5><i class="fas fa-book-reader mr-2 text-info"></i>Javascript/jQuery</h5></li>
+					<li><h5><i class="fas fa-book-reader mr-2 text-info"></i>C#.NET</h5></li>
+					<li><h5><i class="fas fa-book-reader mr-2 text-info"></i>C/C++</h5></li>
+					<li><h5><i class="fas fa-book-reader mr-2 text-info"></i>Matlab</h5></li>
 				</ul>
-			</div>
-			<div class="tab-pane fade text-dark" id="nav-educational" role="tabpanel" aria-labelledby="nav-educational">
-				<ul class="education">
-					<li><i class="fa fa-graduation-cap mr-2 text-danger"></i>A french baccaloreat scientific branch</li>
-					<li><i class="fa fa-graduation-cap mr-2 text-danger"></i>A diploma in IT networking technologies</li>
-					<li><i class="fa fa-graduation-cap mr-2 text-danger"></i>Traineeships in:
-						<ul class="trainings">
-							<li><i class="fa fa-book mr-2 text-success"></i>Javascript / jQuery</li>
-							<li><i class="fa fa-book mr-2 text-success"></i>HTML5 / CSS3</li>
-							<li><i class="fa fa-book mr-2 text-success"></i>PHP / MySQL</li>
-							<li><i class="fa fa-book mr-2 text-success"></i>Adobe Photoshop</li>						
-						</ul>
-					</li>
-				</ul>
-			</div>	
+			<p class="h5">
+				I also have knowledge of images manipulation using Adobe Photoshop and Microsoft Office, specially Word and Powerpoint. After having a diploma in IT networks Technologies, I had several working experiences, but none of them was close to my dreams job: Deveopment. Find my most important experiences in the next section.
+			</p>
 		</div>
 	</section>
-	<section class="" id="myWork">
-		<h1 class="text-center text-success">My Work</h1>
-		<div class="work-gallery d-flex flex-wrap justify-content-around flex-column flex-md-row">
-			<div class="chahd gallery-img border border-primary rounded mb-2"><img class=" img-fluid" alt="chahd" src="images/Chahd.jpg"/></div>
-			<div class="plan gallery-img border border-primary rounded mb-2"><img class="img-fluid" alt="plan-marina" src="images/PlanPrskFini.png"></div>
-			<div class="gallery-img val long border border-primary rounded mb-2"><img alt="valentine-marina" src="images/MarinaStVal.JPG" class="img-fluid"></div>
-			<div class="gallery-img utaim long border border-primary rounded mb-2"><img alt="utaim-monastir" src="images/Utaim.JPG" class="img-fluid"></div>
-			<div class="gallery-img formeplus border border-primary rounded mb-2"><img alt="app-salle-de-sport" src="images/AppFormePlus.JPG" class="img-fluid"></div>
+	<section class="separation my-4">
+		<h3>Here are some opinions of people I worked with:</h3>
+		<div class="d-flex justify-content-around flex-wrap">
+			<div class="card col-3 bg-warning pt-2">
+    			<img class="card-img-top col-4" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+    			<div class="card-body">
+    				<h4 class="card-title">John Doe</h4>
+    				<p class="card-text">A very hard working guy full of energy.</p>
+    			</div>
+    		</div>
+    		<div class="card col-3 bg-warning pt-2">
+    			<img class="card-img-top col-4" src="https://www.w3schools.com/bootstrap4/img_avatar2.png" alt="Card image">
+    			<div class="card-body">
+    				<h4 class="card-title">John Doe</h4>
+    				<p class="card-text">A perfectionist who pays attention to every detail.</p>
+    			</div>
+    		</div>
+    		<div class="card col-3 bg-warning pt-2">
+    			<img class="card-img-top col-4" src="https://www.w3schools.com/bootstrap4/img_avatar4.png" alt="Card image">
+    			<div class="card-body">
+    				<h4 class="card-title">John Doe</h4>
+    				<p class="card-text">A person who loves his work and fits perfectly in a team.</p>
+    			</div>
+    		</div>
+    		<div class="card col-4 mt-4 bg-warning pt-2">
+    			<img class="card-img-top col-4" src="https://www.w3schools.com/bootstrap4/img_avatar6.png" alt="Card image">
+    			<div class="card-body">
+    				<h4 class="card-title">John Doe</h4>
+    				<p class="card-text">Very comfortable to work with, he knows how and when to reduce stress with a good joke.</p>
+    			</div>
+    		</div>
+    		<div class="card col-4 mt-4 bg-warning pt-2">
+    			<img class="card-img-top col-4" src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="Card image">
+    			<div class="card-body">
+    				<h4 class="card-title">John Doe</h4>
+    				<p class="card-text">A kind and polite person who always tries to help others with all possible ways.</p>
+    			</div>
+    		</div>			
 		</div>
 	</section>
-		
-	<section class="" id="contact">		
+	<section class="work container-fluid work-parallax" id="work">
+		<h1 class="text-center text-success">My work</h1>
+		<h4>Click on image for more details</h4>
+		<div class="d-flex justify-content-around flex-wrap">
+			<div class="work-img">
+				<img class="chahd mb-2" src="images/Chahd.jpg" data-toggle="modal" data-target="#chahd-modal">
+			</div>
+			<div class="modal fade" id="chahd-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+       						<h5 class="modal-title" id="chahd-modal-Label">Chahd children magazine</h5>
+       						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       							<span aria-hidden="true">&times;</span>
+       						</button>
+       					</div>
+       					<div class="modal-body">
+       						<h3 class="modal-txt">Chahd magazine is a children magazine I wrote and designed from sketched ideas of a teacher. I mainly used Adobe Photoshop to do it.</h3>
+       						<hr>
+       						<img src="images/Chahd.jpg" class="col-12">       						
+       					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        </div>
+    				</div>
+			  	</div>
+			</div>
+			<div class="work-img">
+				<img class="plan" src="images/PlanPrskFini.png" data-toggle="modal" data-target="#plan-modal">
+			</div>
+			<div class="modal fade" id="plan-modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+       						<h5 class="modal-title" id="planLabel">Plan of the marina of Monastir</h5>
+       						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       							<span aria-hidden="true">&times;</span>
+       						</button>
+       					</div>
+       					<div class="modal-body">
+       						<h3 class="modal-txt">This is the access plan to the marina of Monastir. I created it by painitng over a Google Earth map using Adobe Photoshop and by being present on the port for a more precise map.</h3><hr>
+       						<img src="images/PlanPrskFini.png" class="col-12">
+       					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        </div>
+    				</div>
+			  	</div>
+			</div>
+			<div class="work-img">
+				<img class="sport" src="images/AppFormePlus.JPG" data-toggle="modal" data-target="#sport-modal">
+			</div>
+			<div class="modal fade" id="sport-modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+       						<h5 class="modal-title" id="sport-modalLabel">Forme+ Gym Local Application</h5>
+       						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       							<span aria-hidden="true">&times;</span>
+       						</button>
+       					</div>
+       					<div class="modal-body">
+       						<h3 class="modal-txt">This is my most recent professional developing project: A web application for Forme+ gym. It was a perfect opportunity for me to start using the new versions of web developing techniques. Designed mainly using bootstrap 4.1 with help of css3, HTML5 and jQuery for client side developement, and using PHP object oriented techniques to communicate with a MySQL database for storing Data, it will be used in the gym as soon as they are ready. It manages all of the data of the Gym: Clients, coaches (and their detailed logs using barcodes), economic statistics: Incomes, expenses, gains for a chosen period, and charts to compare periods. </h3><hr>
+       						<img src="images/AppFormePlus.JPG" class="col-12">
+       					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        </div>
+    				</div>
+			  	</div>
+			</div>
+			<div class="work-img">
+				<img class="utaim" src="images/Utaimmini.JPG" data-toggle="modal" data-target="#utaim-modal">
+			</div>
+			<div class="modal fade" id="utaim-modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+       						<h5 class="modal-title" id="utaim-modalLabel">Utaim website</h5>
+       						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       							<span aria-hidden="true">&times;</span>
+       						</button>
+       					</div>
+       					<div class="modal-body">
+       						<h3 class="modal-txt">UTAIM is an organisation that helps the mentally deficient kids. This is the start of the website I was doing for their school, not yet finished. Designed using Bootstrap, HTML and CSS and used Adobe Photoshop for picture's modifications. Click <a href="http://www.utaim-monastir.org/fr/frind.html">here</a> to see this website live.</h3><hr>
+       						<img src="images/Utaim.JPG" class="col-12">
+       					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        </div>
+    				</div>
+			  	</div>
+			</div>
+			<div class="work-img">
+				<img class="stval" src="images/MarinaStVal.JPG" data-toggle="modal" data-target="#stval-modal">			
+			</div>
+			<div class="modal fade" id="stval-modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+       						<h5 class="modal-title" id="stval-modalLabel">Marina Monastir promotional page</h5>
+       						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       							<span aria-hidden="true">&times;</span>
+       						</button>
+       					</div>
+       					<div class="modal-body">
+       						<h3 class="modal-txt">This is a web application for a promotion in the appart-hotels of the marina of Monastir in occasion of Valentine's day. It was developed using PHP for server side programming, Javascript for client side programming, Bootsttrap for layout and design and a MySQL database to save the reservation's data. This was my first challenge in professional web developing. </h3><hr>
+       						<img src="images/MarinaStVal.JPG" class="col-12">
+       					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        </div>
+    				</div>
+			  	</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact-parallax" id="contact">		
 		<h1 class="text-center text-info">Contact Me</h1>
 		<div class="d-flex justify-content-around">
 			<div class="contact-address col-4 text-center">
 				<h3 class="text-dark"><i class="fa fa-mobile-alt"></i><span class="ml-2">Phone number:</span></h3>
-				<h5 class="text-info">+216 55205868</h5>
+				<h5 class="contact-value">+216 55205868</h5>
 			</div>
 			<div class="contact-email col-4 text-center">
 				<h3 class="text-dark"><i class="fas fa-at"></i><span class="ml-2">Email address:</span></h3>
-				<a href="mailto:hassanirami@gmail.com"><h5 class="text-info">hassanirami@gmail.com</h5></a>
+				<a href="mailto:hassanirami@gmail.com"><h5 class="contact-value">hassanirami@gmail.com</h5></a>
 			</div>
 			<div class="contact-address col-4 text-center">
 				<h3 class="text-dark"><i class="far fa-address-card"></i><span class="ml-2">Home address:</span></h3>
-				<h5 class="text-info">Omar el Mokhtar street z-kontesh jemmel 5028</h5>
+				<h5 class="contact-value">Omar el Mokhtar street z-kontesh jemmel 5028</h5>
 			</div>
 		</div>
 	</section>
